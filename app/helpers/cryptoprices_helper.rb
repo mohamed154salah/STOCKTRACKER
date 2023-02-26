@@ -1,0 +1,2 @@
+module CryptopricesHelper
+end

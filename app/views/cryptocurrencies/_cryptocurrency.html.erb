@@ -1,0 +1,25 @@
+<div id="<%= dom_id cryptocurrency %>">
+  <p>
+    <strong>Name:</strong>
+    <%= cryptocurrency.name %>
+  </p>
+
+  <p>
+    <strong>Started at:</strong>
+    <%= cryptocurrency.started_at %>
+  </p>
+  <h2>
+     <strong>crypto_prices</strong>
+  </h2>
+  <hr>
+   <p>
+    <% cryptocurrency.crypto_prices.each do |crypto| %> 
+      <strong>price:</strong>
+      <%=crypto.price %>
+      <strong>captured at:</strong>
+      <%=crypto.captured_at %>
+    <%end %>
+  </p>
+  <hr>
+
+</div>
